@@ -8,10 +8,12 @@ spec:
   selector:
     matchLabels:
       app: guestbook-ui
+      env: dev
   template:
     metadata:
       labels:
         app: guestbook-ui
+        env: dev
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
